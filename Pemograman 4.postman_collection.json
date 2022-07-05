@@ -1,0 +1,342 @@
+{
+    "info": {
+        "_postman_id": "6f389427-f172-44d9-8f61-f95cf68b526dz",
+        "name": "Pemograman 4",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "_exporter_id": "9942741"
+    },
+
+    "item": [{
+            "name": "Login",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "urlencoded",
+                    "urlencoded": [{
+                            "key": "email",
+                            "value": "panji@gmail.com",
+                            "type": "text"
+                        },
+                        {
+                            "key": "password",
+                            "value": "123",
+                            "type": "text"
+                        }
+                    ]
+                },
+                "url": {
+                    "raw": "http://localhost:4000/users/signin",
+                    "protocol": "http",
+                    "host": ["localhost"],
+                    "port": "4000",
+                    "path": ["users", "signin"]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Regsiter",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "urlencoded",
+                    "urlencoded": [{
+                            "key": "nama",
+                            "value": "Panji Prasetyo",
+                            "type": "text"
+                        },
+                        {
+                            "key": "email",
+                            "value": "panji@gmail.com",
+                            "type": "text"
+                        },
+                        {
+                            "key": "password",
+                            "value": "123",
+                            "type": "text"
+                        },
+
+                        {
+                            "key": "telp",
+                            "value": "089325118765",
+                            "type": "text"
+                        },
+
+                        {
+                            "key": "role",
+                            "value": "Admin",
+                            "type": "text"
+                        },
+
+                        {
+                            "key": "jeniskelamin",
+                            "value": "Laki-Laki",
+                            "type": "text"
+                        }
+                    ]
+                },
+                "url": {
+                    "raw": "http://localhost:4000/users/signup",
+                    "protocol": "http",
+                    "host": ["localhost"],
+                    "port": "4000",
+                    "path": ["users", "signup"]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Add barang",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "urlencoded",
+                    "urlencoded": [{
+                            "key": "nama",
+                            "value": "barang",
+                            "type": "text"
+                        },
+
+                        {
+                            "key": "role",
+                            "value": "Admin",
+                            "type": "text"
+                        },
+
+                        {
+                            "key": "kategori",
+                            "value": "IoT WorkShop Kit",
+                            "type": "text"
+                        },
+                        {
+                            "key": "harga",
+                            "value": "10000",
+                            "type": "text"
+                        },
+                        {
+                            "key": "stock",
+                            "value": "100",
+                            "type": "text"
+                        }
+                    ]
+                },
+                "url": {
+                    "raw": "http://localhost:4000/students/add",
+                    "protocol": "http",
+                    "host": ["localhost"],
+                    "port": "4000",
+                    "path": ["barangs", "add"]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "get barang",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:4000/students/get",
+                    "protocol": "http",
+                    "host": ["localhost"],
+                    "port": "4000",
+                    "path": ["barangs", "get"]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "delete barang",
+            "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:4000/students/delete/6278e5577137bae96d2753de",
+                    "protocol": "http",
+                    "host": ["localhost"],
+                    "port": "4000",
+                    "path": ["barangs", "delete", "6278e5577137bae96d2753de"]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Update barang",
+            "request": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                    "mode": "urlencoded",
+                    "urlencoded": [{
+                            "key": "nama",
+                            "value": "Pulpen Standard AE7",
+                            "type": "text"
+                        },
+                        {
+                            "key": "kategori",
+                            "value": "mewah",
+                            "type": "text"
+                        },
+                        {
+                            "key": "harga",
+                            "value": "15000",
+                            "type": "text"
+                        },
+                        {
+                            "key": "stock",
+                            "value": "10",
+                            "type": "text"
+                        }
+                    ]
+                },
+                "url": {
+                    "raw": "http://localhost:4000/students/update/6262daf34ebdb3f185fc9b1e",
+                    "protocol": "http",
+                    "host": ["localhost"],
+                    "port": "4000",
+                    "path": ["barangs", "update", "6262daf34ebdb3f185fc9b1e"]
+                }
+            },
+            "response": []
+        },
+
+        {
+            "name": "Add user",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "urlencoded",
+                    "urlencoded": [{
+                            "key": "email",
+                            "value": "panji@gmail.com",
+                            "type": "text"
+                        },
+
+                        {
+                            "key": "password",
+                            "value": "123",
+                            "type": "text"
+                        },
+
+                        {
+                            "key": "nama",
+                            "value": "panji",
+                            "type": "text"
+                        },
+                        {
+                            "key": "role",
+                            "value": "Admin",
+                            "type": "text"
+                        },
+                        {
+                            "key": "telp",
+                            "value": "098765432",
+                            "type": "text"
+                        },
+                        {
+                            "key": "jeniskelamin",
+                            "value": "Laki-Laki",
+                            "type": "text"
+                        }
+                    ]
+                },
+                "url": {
+                    "raw": "http://localhost:4000/students/add",
+                    "protocol": "http",
+                    "host": ["localhost"],
+                    "port": "4000",
+                    "path": ["users", "add"]
+                }
+            },
+            "response": []
+        },
+
+        {
+            "name": "get user",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:4000/students/get",
+                    "protocol": "http",
+                    "host": ["localhost"],
+                    "port": "4000",
+                    "path": ["users", "get"]
+                }
+            },
+            "response": []
+        },
+
+        {
+            "name": "delete user",
+            "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:4000/students/delete/6278e5577137bae96d2753de",
+                    "protocol": "http",
+                    "host": ["localhost"],
+                    "port": "4000",
+                    "path": ["users", "delete", "6278e5577137bae96d2753de"]
+                }
+            },
+            "response": []
+        },
+
+        {
+            "name": "Update user",
+            "request": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                    "mode": "urlencoded",
+                    "urlencoded": [{
+                            "key": "email",
+                            "value": "panjiprasetyo@gmail.com",
+                            "type": "text"
+                        },
+                        {
+                            "key": "password",
+                            "value": "123",
+                            "type": "text"
+                        },
+                        {
+                            "key": "nama",
+                            "value": "panji",
+                            "type": "text"
+                        },
+                        {
+                            "key": "role",
+                            "value": "Admin",
+                            "type": "text"
+                        },
+
+                        {
+                            "key": "telp",
+                            "value": "098765432",
+                            "type": "text"
+                        },
+
+                        {
+                            "key": "jeniskelamin",
+                            "value": "Laki-Laki",
+                            "type": "text"
+                        }
+                    ]
+                },
+                "url": {
+                    "raw": "http://localhost:4000/students/update/6262daf34ebdb3f185fc9b1e",
+                    "protocol": "http",
+                    "host": ["localhost"],
+                    "port": "4000",
+                    "path": ["users", "update", "6262daf34ebdb3f185fc9b1e"]
+                }
+            },
+            "response": []
+        }
+    ]
+}

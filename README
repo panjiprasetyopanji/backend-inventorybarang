@@ -1,0 +1,26 @@
+Dokumentasi Project
+
+Nodejs=https://nodejs.org/en/
+Express =https://expressjs.com/en/starter/installing.html
+Mongoose=https://mongoosejs.com/
+Nodemon=https://www.npmjs.com/package/nodemon
+Cors=https://www.npmjs.com/package/cors
+Bcrypt=https://www.npmjs.com/package/bcrypt
+Dotenv=https://www.npmjs.com/package/dotenv
+
+Setup :
+setting file .env
+npm install
+npm start
+
+Fungsi 
+CRUD data mahasiswa
+Login Method POST=http://localhost:4000/users/signin
+Register Method POST=http://localhost:4000/users/signup
+
+Add Student Method POST=http://localhost:4000/students/add
+Get Student Method GET=http://localhost:4000/students/get
+Delete Student Method DELETE=http://localhost:4000/students/delete/:id
+Update Student Method PUT=http://localhost:4000/students/update/:id
+Upload Gambar Method POST=http://localhost:4000/students/update/:id
+Get Gambar Method POST=http://localhost:4000/nama-gambar
